@@ -1,0 +1,130 @@
+/* :root{
+    background-color: #080710;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+  } */
+
+body {
+    font-family: Dana;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    min-height: auto;
+    background-color: #161623;
+    box-sizing: border-box;
+}
+
+section {
+    position: relative;
+    background: #161623;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(#ffc107, #e91e63);
+    border-radius: 50%;
+    transform: translate(130px, 330px);
+}
+
+section::after{
+    content: '';
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(#2196f3, #31ff38);
+    border-radius: 50%;
+    transform: translate(-160px, -40px);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    position: relative;
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    top: 140px;
+    min-width: 300px;
+    min-height: 340px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    z-index: 10;
+    padding: 10px;
+    backdrop-filter: blur(25px);
+}
+
+.header {
+    color: white;
+    padding: 32px;
+    text-align: center;
+}
+
+h1{
+    font-family: Dana;
+    font-size: 32px;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 255px;
+    height: 50px;
+    padding: 0px 10px;
+    font-weight: 300px;
+    position: relative;
+    left: 10px;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+label {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+    font-size: 16px;
+    left: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 50px;
+    width: 92.5%;
+    font-size: 18px;
+    align-items: center;
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+}
+
+
+
+
+
+
